@@ -5,15 +5,15 @@ import {Script, console} from "forge-std/Script.sol";
 import {Disperse} from "../src/Disperse.sol";
 
 
-contract DisperseCollectScript is Script {
-    Disperse public disperseCollect;
+contract DisperseScript is Script {
+    Disperse public disperse;
 
     function setUp() public {}
 
     function run() public {
         vm.startBroadcast();
 
-        disperseCollect = new Disperse();
+        disperse = new Disperse();
 
         vm.stopBroadcast();
     }
